@@ -1,12 +1,25 @@
 "use strict";
 const electron = require("electron");
+const cjs = require("tinybase/cjs");
+const persisterIndexedDb = require("tinybase/cjs/persisters/persister-indexed-db");
 const server = require("@trpc/server");
 const main = require("electron-trpc/main");
 const node_path = require("node:path");
+const store = cjs.createStore().setTablesSchema({
+  contact: {
+    name: {
+      type: "string"
+    }
+  }
+});
+const persister = persisterIndexedDb.createIndexedDbPersister(store, "solidtron_db", 5);
+persister.save();
+persister.startAutoSave();
 async function createContext(opts) {
   const bwindow = electron.BrowserWindow.getFocusedWindow();
   return {
-    window: bwindow
+    window: bwindow,
+    store
   };
 }
 const t = server.initTRPC.context().create({
