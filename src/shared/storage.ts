@@ -6,6 +6,9 @@ const store = createStore().setTablesSchema({
     name: {
       type: "string",
     },
+    phoneNumber: {
+      type: "number",
+    },
   },
 });
 
