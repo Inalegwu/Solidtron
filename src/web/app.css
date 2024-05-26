@@ -9,6 +9,7 @@
   box-sizing: border-box;
   font-family: Bricolage;
   text-decoration: none;
+  user-select:none;
 }
 
 #drag-region {

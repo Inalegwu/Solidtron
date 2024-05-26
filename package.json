@@ -30,6 +30,7 @@
     "vite-plugin-solid": "^2.10.2"
   },
   "dependencies": {
+    "@ark-ui/solid": "^3.0.0",
     "@solidjs/router": "^0.13.3",
     "@trpc/server": "^10.45.2",
     "electron-trpc": "^0.6.1",

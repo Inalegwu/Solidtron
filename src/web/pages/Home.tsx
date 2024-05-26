@@ -1,3 +1,4 @@
+import { Popover } from "@ark-ui/solid";
 import { Minus, Plus } from "lucide-solid";
 import { createSignal } from "solid-js";
 import Layout from "../components/layout";
@@ -30,6 +31,14 @@ export default function Home() {
             <Plus size={13} />
           </button>
         </div>
+        <Popover.Root>
+          <Popover.Trigger class="appearance-none border-1 border-solid border-zinc-200 rounded-md px-3 py-3 cursor-pointer">
+            An Ark-UI Popover
+          </Popover.Trigger>
+          <Popover.Content class="shadow-md bg-light-1 shadow-op-[0.4] border-1 border-solid border-zinc-200 rounded-lg px-4 py-4">
+            Ark UI popover content
+          </Popover.Content>
+        </Popover.Root>
       </section>
     </Layout>
   );
