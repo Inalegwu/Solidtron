@@ -6,7 +6,7 @@ type Props = {
 
 export default function Layout({ children }: Props) {
   return (
-    <div class="w-full h-screen bg-dark-9 text-white">
+    <div class="w-full h-screen bg-light-2 text-black">
       <div class="w-full px-3 py-3 flex items-center justify-between">
         <p class="text-xs text-zinc-400">Solidtron</p>
         <div class="flex flex-1 p-2" id="drag-region" />
