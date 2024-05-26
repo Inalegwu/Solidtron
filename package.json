@@ -1,0 +1,40 @@
+{
+  "name": "solidtron",
+  "version": "0.0.1",
+  "description": "Starting point for local-first desktop applications using solidjs",
+  "main": "out/main/main.js",
+  "scripts": {
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev -w",
+    "prebuild": "electron-vite build",
+    "build": "pnpm tsx build.ts",
+    "postinstall": "electron-rebuild"
+  },
+  "keywords": [],
+  "author": {
+    "email": "youremail@provider.com",
+    "name": "your_name"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
+    "@electron/rebuild": "^3.6.0",
+    "@types/node": "^20.12.12",
+    "electron": "^30.0.8",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.2.0",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5",
+    "unocss": "^0.60.3",
+    "vite": "^5.2.11",
+    "vite-plugin-solid": "^2.10.2"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.13.3",
+    "@trpc/server": "^10.45.2",
+    "electron-trpc": "^0.6.1",
+    "lucide-solid": "^0.379.0",
+    "solid-js": "^1.8.17",
+    "tinybase": "^4.8.9"
+  }
+}
