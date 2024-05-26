@@ -26,6 +26,9 @@ importers:
       solid-js:
         specifier: ^1.8.17
         version: 1.8.17
+      solid-toast:
+        specifier: ^0.5.0
+        version: 0.5.0(solid-js@1.8.17)
       tinybase:
         specifier: ^4.8.9
         version: 4.8.9
@@ -2666,6 +2669,11 @@ packages:
     resolution: {integrity: sha512-F3aPsX6hVw9ttm5LYlth8Q15x6MlI/J3Dn+o3EQyRTtTxidepSTwAYdozt01/YA+7ObcciagGEyXIopGZzQtbA==}
     peerDependencies:
       solid-js: ^1.3
+
+  solid-toast@0.5.0:
+    resolution: {integrity: sha512-t770JakjyS2P9b8Qa1zMLOD51KYKWXbTAyJePVUoYex5c5FH5S/HtUBUbZAWFcqRCKmAE8KhyIiCvDZA8bOnxQ==}
+    peerDependencies:
+      solid-js: ^1.5.4
 
   source-map-js@1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
@@ -6371,6 +6379,10 @@ snapshots:
       '@babel/generator': 7.24.6
       '@babel/helper-module-imports': 7.24.6
       '@babel/types': 7.24.6
+      solid-js: 1.8.17
+
+  solid-toast@0.5.0(solid-js@1.8.17):
+    dependencies:
       solid-js: 1.8.17
 
   source-map-js@1.2.0: {}
